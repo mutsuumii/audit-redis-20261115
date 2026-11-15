@@ -1,0 +1,1934 @@
+{
+  "source_repo": "antirez/redis",
+  "source_url": "https://github.com/antirez/redis",
+  "audit_date": "2026-11-15T10:28:47.285336",
+  "scanner_version": "1.3.0",
+  "findings_count": 240,
+  "severity_breakdown": {
+    "HIGH": 218,
+    "CRITICAL": 21,
+    "MEDIUM": 1
+  },
+  "findings": [
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/crc64.c",
+      "line": 332
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "src/crc64.c",
+      "line": 297
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "src/sort.c",
+      "line": 381
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/sort.c",
+      "line": 639
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "src/sort.c",
+      "line": 20
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "src/sort.c",
+      "line": 381
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "deps/jemalloc/include/jemalloc/internal/large_externs.h",
+      "line": 6
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/jemalloc/include/jemalloc/internal/large_externs.h",
+      "line": 6
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 388
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1969
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1983
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1990
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 497
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1201
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1218
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1240
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1294
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2106
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2337
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2603
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 132
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 145
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 418
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 428
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 516
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 528
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 556
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 573
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 589
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 600
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 610
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 646
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 647
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 715
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 826
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 847
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1220
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1242
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1243
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1297
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1298
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1299
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1407
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1417
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1436
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1440
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1445
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1446
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1447
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1448
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1579
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1679
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1695
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1732
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1910
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1929
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2108
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2167
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2206
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2216
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2227
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2237
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2261
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2272
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2442
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2447
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2489
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2641
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2649
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2726
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2727
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2728
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2736
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2737
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2811
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2812
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2813
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2886
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 127
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 130
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 395
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 497
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 514
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 525
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 553
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 569
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 750
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 761
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1201
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1218
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1240
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1294
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1668
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 1904
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2104
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2106
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2337
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2460
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2603
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2722
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2723
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/hnsw.c",
+      "line": 2724
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/jemalloc/include/jemalloc/internal/jemalloc_internal_externs.h",
+      "line": 56
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/jemalloc/include/jemalloc/internal/jemalloc_internal_externs.h",
+      "line": 58
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/jemalloc/include/jemalloc/internal/jemalloc_internal_externs.h",
+      "line": 59
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "src/bitops.c",
+      "line": 865
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "src/bitops.c",
+      "line": 866
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "src/bitops.c",
+      "line": 867
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "src/bitops.c",
+      "line": 1519
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/bitops.c",
+      "line": 859
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/bitops.c",
+      "line": 885
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/bitops.c",
+      "line": 886
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/bitops.c",
+      "line": 887
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/bitops.c",
+      "line": 1175
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/bitops.c",
+      "line": 1176
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/bitops.c",
+      "line": 1177
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/bitops.c",
+      "line": 1486
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/bitops.c",
+      "line": 1492
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/bitops.c",
+      "line": 1498
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/bitops.c",
+      "line": 1503
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/bitops.c",
+      "line": 1513
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/bitops.c",
+      "line": 1536
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/bitops.c",
+      "line": 1541
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/bitops.c",
+      "line": 1550
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/bitops.c",
+      "line": 1688
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "src/bitops.c",
+      "line": 865
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "src/bitops.c",
+      "line": 866
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "src/bitops.c",
+      "line": 867
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "src/bitops.c",
+      "line": 1519
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "deps/hdr_histogram/hdr_histogram.c",
+      "line": 433
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "deps/hdr_histogram/hdr_histogram.c",
+      "line": 449
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/hdr_histogram/hdr_histogram.c",
+      "line": 424
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/hdr_histogram/hdr_histogram.c",
+      "line": 430
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/function_lua.c",
+      "line": 191
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/function_lua.c",
+      "line": 204
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/function_lua.c",
+      "line": 348
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/function_lua.c",
+      "line": 349
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/function_lua.c",
+      "line": 352
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/function_lua.c",
+      "line": 383
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/function_lua.c",
+      "line": 384
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/function_lua.c",
+      "line": 420
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "src/function_lua.c",
+      "line": 313
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "src/function_lua.c",
+      "line": 375
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "src/function_lua.c",
+      "line": 429
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "src/function_lua.c",
+      "line": 499
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "deps/jemalloc/test/unit/bitmap.c",
+      "line": 96
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "deps/jemalloc/test/unit/bitmap.c",
+      "line": 127
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "deps/jemalloc/test/unit/bitmap.c",
+      "line": 165
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "deps/jemalloc/test/unit/bitmap.c",
+      "line": 312
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/jemalloc/test/unit/bitmap.c",
+      "line": 82
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/jemalloc/test/unit/bitmap.c",
+      "line": 83
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/jemalloc/test/unit/bitmap.c",
+      "line": 119
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/jemalloc/test/unit/bitmap.c",
+      "line": 120
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/jemalloc/test/unit/bitmap.c",
+      "line": 150
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/jemalloc/test/unit/bitmap.c",
+      "line": 151
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/jemalloc/test/unit/bitmap.c",
+      "line": 187
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/jemalloc/test/unit/bitmap.c",
+      "line": 188
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "src/t_string.c",
+      "line": 135
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/t_string.c",
+      "line": 956
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/t_string.c",
+      "line": 957
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "src/t_string.c",
+      "line": 135
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "src/t_string.c",
+      "line": 828
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "deps/jemalloc/test/unit/emitter.c",
+      "line": 59
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "src/mstr.c",
+      "line": 235
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "src/mstr.c",
+      "line": 240
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "src/mstr.c",
+      "line": 437
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "src/mstr.c",
+      "line": 38
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "src/mstr.c",
+      "line": 95
+    },
+    {
+      "id": "C-STACK-001",
+      "name": "Large stack allocation (potential stack overflow)",
+      "severity": "MEDIUM",
+      "cwe": "CWE-770",
+      "file": "src/mstr.c",
+      "line": 436
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "deps/jemalloc/test/unit/cache_bin.c",
+      "line": 70
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "deps/jemalloc/test/unit/cache_bin.c",
+      "line": 82
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "deps/jemalloc/test/unit/cache_bin.c",
+      "line": 260
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/jemalloc/test/unit/cache_bin.c",
+      "line": 70
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 388
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 118
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 121
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 128
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 131
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 132
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 153
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 154
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 173
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 183
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 209
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 214
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 239
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 241
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 242
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 345
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 391
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 284
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 305
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 326
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 327
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 367
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 145
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "modules/vector-sets/fastjson_test.c",
+      "line": 302
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/jemalloc/test/unit/san.c",
+      "line": 33
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/jemalloc/test/unit/san.c",
+      "line": 34
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/jemalloc/test/unit/san.c",
+      "line": 79
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/jemalloc/test/unit/san.c",
+      "line": 81
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "deps/jemalloc/src/prof_sys.c",
+      "line": 380
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "deps/jemalloc/src/prof_sys.c",
+      "line": 433
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "deps/jemalloc/src/prof_sys.c",
+      "line": 568
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "deps/jemalloc/src/prof_sys.c",
+      "line": 573
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "deps/jemalloc/src/prof_sys.c",
+      "line": 583
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "deps/hiredis/adapters/libsdevent.h",
+      "line": 28
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/hiredis/adapters/libsdevent.h",
+      "line": 156
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "src/unix.c",
+      "line": 78
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "deps/hiredis/examples/example-macosx.c",
+      "line": 15
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "deps/lua/src/lstrlib.c",
+      "line": 750
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "deps/lua/src/lstrlib.c",
+      "line": 777
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "deps/lua/src/lstrlib.c",
+      "line": 782
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "deps/lua/src/lstrlib.c",
+      "line": 787
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "deps/lua/src/lstrlib.c",
+      "line": 792
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "deps/lua/src/lstrlib.c",
+      "line": 810
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "deps/lua/src/lstrlib.c",
+      "line": 777
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "deps/lua/src/lstrlib.c",
+      "line": 782
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "deps/lua/src/lstrlib.c",
+      "line": 787
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "deps/lua/src/lstrlib.c",
+      "line": 792
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "deps/lua/src/lstrlib.c",
+      "line": 810
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "deps/hiredis/async.c",
+      "line": 94
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "deps/hiredis/async.c",
+      "line": 301
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "deps/hiredis/async.c",
+      "line": 534
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "deps/hiredis/async.c",
+      "line": 888
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "deps/hiredis/async.c",
+      "line": 920
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "deps/hiredis/async.c",
+      "line": 981
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "deps/hiredis/async.c",
+      "line": 1002
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/hiredis/async.c",
+      "line": 69
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/hiredis/async.c",
+      "line": 118
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/hiredis/async.c",
+      "line": 273
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/hiredis/async.c",
+      "line": 1019
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "deps/hiredis/sds.h",
+      "line": 273
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/hiredis/sds.h",
+      "line": 272
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/hiredis/sds.h",
+      "line": 273
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "deps/jemalloc/test/unit/zero_reallocs.c",
+      "line": 24
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/syscheck.c",
+      "line": 90
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/syscheck.c",
+      "line": 91
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/syscheck.c",
+      "line": 113
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "src/syscheck.c",
+      "line": 347
+    }
+  ]
+}
